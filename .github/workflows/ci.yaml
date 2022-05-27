@@ -23,7 +23,7 @@ jobs:
         # https://ros.org/reps/rep-0003.html
         # https://ros.org/reps/rep-2000.html
         include:
-          # Humble Hawksbill (May 2022 - )
+          # Humble Hawksbill (May 2022 - May 2027)
           - docker_image: ros:humble
             ros_distribution: humble
 
