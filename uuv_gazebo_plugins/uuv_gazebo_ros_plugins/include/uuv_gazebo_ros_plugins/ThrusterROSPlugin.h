@@ -23,6 +23,7 @@
 #define __THRUSTER_ROS_PLUGIN_HH__
 
 #include <map>
+#include <memory>
 #include <string>
 #include <vector>
 

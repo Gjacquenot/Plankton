@@ -39,6 +39,7 @@
 #include <uuv_world_ros_plugins_msgs/srv/transform_from_spherical_coord.hpp>
 
 #include <map>
+#include <memory>
 #include <string>
 
 namespace gazebo

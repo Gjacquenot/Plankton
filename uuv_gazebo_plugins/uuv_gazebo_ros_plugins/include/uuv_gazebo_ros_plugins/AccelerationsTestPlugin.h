@@ -23,6 +23,7 @@
 #define __UUV_GAZEBO_PLUGINS_ACCELERATIONS_TEST_PLUGIN_H__
 
 #include <map>
+#include <memory>
 #include <string>
 
 #include <gazebo/gazebo.hh>

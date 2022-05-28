@@ -38,9 +38,10 @@
 #include <sensor_msgs/msg/nav_sat_fix.hpp>
 
 #include <chrono>
+#include <map>
+#include <memory>
 #include <random>
 #include <string>
-#include <map>
 
 
 namespace gazebo

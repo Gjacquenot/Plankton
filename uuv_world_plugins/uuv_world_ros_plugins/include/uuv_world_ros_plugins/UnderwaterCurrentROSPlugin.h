@@ -27,6 +27,7 @@
 #define __UNDERWATER_CURRENT_ROS_PLUGIN_HH__
 
 #include <map>
+#include <memory>
 #include <string>
 
 // Gazebo plugin

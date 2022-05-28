@@ -26,6 +26,7 @@
 #ifndef __JOINT_STATE_PUBLISHER_HH__
 #define __JOINT_STATE_PUBLISHER_HH__
 
+#include <memory>
 #include <sstream>
 #include <string>
 #include <vector>

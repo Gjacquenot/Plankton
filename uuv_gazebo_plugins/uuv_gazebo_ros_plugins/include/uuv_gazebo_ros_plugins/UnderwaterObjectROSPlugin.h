@@ -26,6 +26,7 @@
 #define __UNDERWATER_OBJECT_ROS_PLUGIN_HH__
 
 #include <map>
+#include <memory>
 #include <string>
 
 #include <gazebo/gazebo.hh>

@@ -30,6 +30,7 @@
 #include <rclcpp/rclcpp.hpp>
 #include <sensor_msgs/msg/battery_state.hpp>
 
+#include <memory>
 #include <string>
 
 namespace gazebo
