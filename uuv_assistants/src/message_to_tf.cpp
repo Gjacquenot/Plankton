@@ -72,6 +72,7 @@ void addTransform(std::vector<geometry_msgs::msg::TransformStamped>& transforms,
   transforms.push_back(new_msg);
 }
 
+/* Deprecated code
 namespace tf2
 {
   //Specialization for Point msg
@@ -80,6 +81,7 @@ namespace tf2
     out = Vector3(msgIn.x, msgIn.y, msgIn.z);
   }
 }
+*/
 
 std::string stripSlash(const std::string & in)
 {
