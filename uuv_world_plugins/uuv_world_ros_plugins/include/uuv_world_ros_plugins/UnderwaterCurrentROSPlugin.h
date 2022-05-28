@@ -119,7 +119,7 @@ namespace uuv_simulator_ros
     private: std::map<std::string, rclcpp::ServiceBase::SharedPtr> worldServices;
 
     /// \brief Pointer to this ROS node's handle.
-    private: std::make_shared<rclcpp::Node> myRosNode;
+    private: std::shared_ptr<rclcpp::Node> myRosNode;
 
     /// \brief Connection for callbacks on update world.
     private: gazebo::event::ConnectionPtr rosPublishConnection;

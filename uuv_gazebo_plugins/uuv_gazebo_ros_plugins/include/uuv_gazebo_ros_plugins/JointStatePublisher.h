@@ -64,7 +64,7 @@ class JointStatePublisher : public gazebo::ModelPlugin
 
   private: gazebo::event::ConnectionPtr updateConnection;
 
-  protected: std::make_shared<rclcpp::Node> myRosNode;
+  protected: std::shared_ptr<rclcpp::Node> myRosNode;
 
   private: std::string myRobotNamespace;
 

@@ -103,7 +103,7 @@ namespace gazebo
     protected: std_msgs::msg::Bool isOn;
 
     /// \brief ROS node handle for communication with ROS
-    protected: std::make_shared<rclcpp::Node> myRosNode;
+    protected: std::shared_ptr<rclcpp::Node> myRosNode;
 
     /// \brief Gazebo's node handle for transporting measurement  messages.
     protected: transport::NodePtr gazeboNode;

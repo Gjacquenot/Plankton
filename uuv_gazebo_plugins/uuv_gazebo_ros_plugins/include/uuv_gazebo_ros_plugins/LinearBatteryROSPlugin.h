@@ -57,7 +57,7 @@ class LinearBatteryROSPlugin : public LinearBatteryPlugin
   protected: void PublishBatteryState();
 
   /// \brief Pointer to this ROS node's handle.
-  protected: std::make_shared<rclcpp::Node> myRosNode;
+  protected: std::shared_ptr<rclcpp::Node> myRosNode;
 
   /// \brief Namespace for this ROS node
   protected: std::string myRobotNamespace;

@@ -222,7 +222,7 @@ namespace uuv_simulator_ros
     protected: virtual void PublishIsSubmerged();
 
     /// \brief Pointer to this ROS node's handle.
-    protected: std::make_shared<rclcpp::Node> myRosNode;
+    protected: std::shared_ptr<rclcpp::Node> myRosNode;
 
     /// \brief Subscriber to locally calculated current velocity
     private: rclcpp::Subscription<geometry_msgs::msg::Vector3>::SharedPtr mySubLocalCurVel;

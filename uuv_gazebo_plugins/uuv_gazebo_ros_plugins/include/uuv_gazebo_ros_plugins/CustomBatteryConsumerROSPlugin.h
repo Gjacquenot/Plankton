@@ -53,7 +53,7 @@ class CustomBatteryConsumerROSPlugin : public ModelPlugin
   protected: void UpdatePowerLoad(double _powerLoad = 0.0);
 
   /// \brief Pointer to this ROS node's handle.
-  protected: std::make_shared<rclcpp::Node> myRosNode;
+  protected: std::shared_ptr<rclcpp::Node> myRosNode;
 
   /// \brief Subscriber to the device state flag
   protected: rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr myDeviceStateSub;
