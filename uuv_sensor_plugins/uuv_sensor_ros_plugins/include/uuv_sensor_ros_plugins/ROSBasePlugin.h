@@ -26,7 +26,6 @@
 #include <gazebo/physics/physics.hh>
 #include <gazebo/sensors/Noise.hh>
 
-#include <gazebo_ros/node.hpp>
 
 #include <uuv_sensor_ros_plugins/Common.h>
 #include <uuv_sensor_ros_plugins_msgs/srv/change_sensor_state.hpp>

@@ -32,7 +32,6 @@
 #include <rclcpp/rclcpp.hpp>
 #include <geometry_msgs/msg/vector3.hpp>
 
-#include <gazebo_ros/node.hpp>
 
 #include <uuv_world_ros_plugins_msgs/srv/set_origin_spherical_coord.hpp>
 #include <uuv_world_ros_plugins_msgs/srv/get_origin_spherical_coord.hpp>

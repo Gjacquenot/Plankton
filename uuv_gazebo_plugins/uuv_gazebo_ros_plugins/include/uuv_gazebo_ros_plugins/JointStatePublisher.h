@@ -37,8 +37,6 @@
 #include <gazebo/physics/Joint.hh>
 #include <gazebo/physics/World.hh>
 
-#include <gazebo_ros/node.hpp>
-
 #include <rclcpp/rclcpp.hpp>
 #include <sensor_msgs/msg/joint_state.hpp>
 

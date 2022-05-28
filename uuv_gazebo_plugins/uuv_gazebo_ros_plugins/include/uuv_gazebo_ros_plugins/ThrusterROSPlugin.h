@@ -33,8 +33,6 @@
 
 #include <gazebo/common/Plugin.hh>
 
-#include <gazebo_ros/node.hpp>
-
 #include <uuv_gazebo_plugins/ThrusterPlugin.h>
 
 #include <uuv_gazebo_ros_plugins_msgs/msg/float_stamped.hpp>

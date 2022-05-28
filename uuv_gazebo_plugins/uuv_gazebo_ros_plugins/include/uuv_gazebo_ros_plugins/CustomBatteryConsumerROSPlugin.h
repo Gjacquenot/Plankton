@@ -27,8 +27,6 @@
 #include <gazebo/physics/Link.hh>
 #include <gazebo/common/Plugin.hh>
 
-#include <gazebo_ros/node.hpp>
-
 #include <rclcpp/rclcpp.hpp>
 #include <std_msgs/msg/bool.hpp>
 

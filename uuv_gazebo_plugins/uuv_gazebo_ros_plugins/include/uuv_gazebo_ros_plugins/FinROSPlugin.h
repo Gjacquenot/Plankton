@@ -28,8 +28,6 @@
 
 #include <gazebo/common/Plugin.hh>
 
-#include <gazebo_ros/node.hpp>
-
 #include <rclcpp/rclcpp.hpp>
 #include <geometry_msgs/msg/wrench_stamped.hpp>
 
@@ -62,7 +60,7 @@ namespace uuv_simulator_ros
     /// \brief Return the list of paramaters of the lift and drag model
     public: void GetLiftDragParams(
       const GetListParam::Request::SharedPtr  _req,
-            GetListParam::Response::SharedPtr _res);  
+            GetListParam::Response::SharedPtr _res);
 
     /// \brief Return the ROS publish period.
     public: gazebo::common::Time GetRosPublishPeriod();
@@ -95,7 +93,7 @@ namespace uuv_simulator_ros
     private: gazebo::common::Time rosPublishPeriod;
 
     /// \brief Map of services
-    private: std::map<std::string, 
+    private: std::map<std::string,
                       rclcpp::Service<uuv_gazebo_ros_plugins_msgs::srv::GetListParam>::SharedPtr> myServicesById;
 
     /// \brief Last time we published a message via ROS.
