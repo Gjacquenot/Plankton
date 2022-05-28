@@ -121,7 +121,7 @@ namespace uuv_simulator_ros
     rclcpp::Service<uuv_gazebo_ros_plugins_msgs::srv::GetThrusterConversionFcn>::SharedPtr myGet_thruster_conversion_fcn;
 
     /// \brief Pointer to this ROS node's handle.
-    protected: gazebo_ros::Node::SharedPtr myRosNode;
+    protected: std::make_shared<rclcpp::Node> myRosNode;
 
     /// \brief Subscriber reacting to new reference thrust set points.
     private: rclcpp::Subscription<uuv_gazebo_ros_plugins_msgs::msg::FloatStamped>::SharedPtr mySubThrustReference;

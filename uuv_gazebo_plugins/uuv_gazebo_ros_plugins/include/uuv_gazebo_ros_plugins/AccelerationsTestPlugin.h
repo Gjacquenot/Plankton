@@ -77,7 +77,7 @@ class AccelerationsTestPlugin : public gazebo::ModelPlugin
   protected: physics::LinkPtr link;
 
   // ROS things
-  private: gazebo_ros::Node::SharedPtr myRosNode;
+  private: std::make_shared<rclcpp::Node> myRosNode;
 
   protected: rclcpp::Publisher<geometry_msgs::msg::Accel>::SharedPtr myPub_accel_b_gazebo;
   protected: rclcpp::Publisher<geometry_msgs::msg::Accel>::SharedPtr myPub_accel_b_numeric;

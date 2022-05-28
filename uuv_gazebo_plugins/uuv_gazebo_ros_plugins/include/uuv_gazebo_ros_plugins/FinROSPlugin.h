@@ -75,7 +75,7 @@ namespace uuv_simulator_ros
     public: virtual void Reset();
 
     /// \brief Pointer to this ROS node's handle.
-    protected: gazebo_ros::Node::SharedPtr myRosNode;
+    protected: std::make_shared<rclcpp::Node> myRosNode;
 
     /// \brief Subscriber reacting to new reference set points.
     private: rclcpp::Subscription<uuv_gazebo_ros_plugins_msgs::msg::FloatStamped>::SharedPtr mySubReference;

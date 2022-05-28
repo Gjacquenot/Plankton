@@ -76,7 +76,7 @@ class SphericalCoordinatesROSInterfacePlugin : public WorldPlugin
       uuv_world_ros_plugins_msgs::srv::TransformFromSphericalCoord::Response::SharedPtr _res);
 
   /// \brief Pointer to this ROS node's handle.
-  protected: gazebo_ros::Node::SharedPtr myRosNode;
+  protected: std::make_shared<rclcpp::Node> myRosNode;
 
   /// \brief Connection for callbacks on update world.
   protected: event::ConnectionPtr rosPublishConnection;
